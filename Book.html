@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop-ForYou</title>
+    <link rel="stylesheet" href="Book.css">
+</head>
+<body>
+
+
+    <nav id="navbar">
+        <ul>
+            <a href="Book.html">Home</a>
+            <a href="#">Books</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search books, authors..." id="search" autocomplete="off">
+            <button id="searchButton">Search</button>
+            <ul id="searchSuggestions" class="search-suggestions" hidden></ul>
+        </div>
+    </nav>
+
+
+    <main class="content">
+        <section class="results-panel">
+            <div class="results-heading">
+                <h2>Books</h2>
+                <p id="resultCount" style="display:none;"></p>
+            </div>
+            <ul id="bookList" class="book-list" aria-live="polite"></ul>
+            <button id="loadMoreButton" class="load-more">Load more</button>
+        </section>
+
+        <section class="results-panel" id="relatedBooksSection" style="display: none; margin-top: 3rem;">
+            <div class="results-heading">
+                <h2>Related Books</h2>
+            </div>
+            <ul id="relatedBooksList" class="book-list" aria-live="polite"></ul>
+        </section>
+    </main>
+
+<script src="Book.js"></script>
+    </body>
+</html>
