@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decrypt Secret Note</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2> Decrypt Secret Note</h2>
+    <div id="password-area">
+      <input type="password" id="decrypt-password" placeholder="Enter the password">
+      <button id="view-btn">Read & Burn Note</button>
+    </div>
+    
+    <div id="secret-content" class="hidden">
+      <h3>💥 This note has been destroyed from the server:</h3>
+      <div id="decrypted-text"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanishing Secret Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Vanishing Secret Notes</h2>
+    <textarea id="note-text" placeholder="Write your secret note here..."></textarea>
+    <input type="password" id="note-password" placeholder="Enter a decryption password">
+    <button id="burn-btn">Create Self-Destructing Link</button>
+    
+    <div id="link-output" class="hidden">
+      <p>Share this secret link (It will work ONLY ONCE):</p>
+      <input type="text" id="share-url" readonly onclick="this.select()">
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
